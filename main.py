@@ -37,9 +37,19 @@ while True:
         print("Digite o telefone do contato")
         tel = input()
         print("Digite o dia do aniversário do contato")
-        dia = input()
+        while True:
+            dia = int(input())
+            if not 0 < dia < 32:
+                print("Dia inválido")
+            else:
+                break
         print("Digite o mês do aniversário do contato")
-        mes = input()
+        while True:
+            mes = int(input())
+            if not 0 < mes < 13:
+                print("Mes inválido")
+            else:
+                break
         contato_dict = {
             "NOME": nome,
             "TELEFONE": tel,

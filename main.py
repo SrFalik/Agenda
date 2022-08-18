@@ -107,4 +107,4 @@ while True:
             print("nome,telefone,dia_aniversario,mes_aniversario", file=o)
             for i in lista_dict:
                 print(i['NOME'] + "," + i['TELEFONE'] + "," + i['DIA_ANIVERSARIO'] + "," + i["MES_ANIVERSARIO"], file=o)
-    break
+        break
